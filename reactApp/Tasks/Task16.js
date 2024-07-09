@@ -14,7 +14,7 @@ const Task16 = () => {
       ) : null}
       <Button onPress={() => {
         setShow(!showState);
-      }} title="Show" />
+      }} title={showState? 'Hide':'Show'} />
     </View>
   );
 };
