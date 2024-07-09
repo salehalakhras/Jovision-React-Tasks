@@ -10,7 +10,8 @@ const Task19 = () => {
     <View>
       <Button
         onPress={() => {
-          setShow(true);
+          showState? console.log('Class Component HIdden') : console.log('Class Component Shown');
+          setShow(!showState);
         }}
         title={'Show'}></Button>
       {showState ? <MyClassComponent_Task19></MyClassComponent_Task19> : null}
