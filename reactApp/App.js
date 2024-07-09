@@ -9,11 +9,13 @@
 import React from 'react';
 // import type {Node} from 'react';
 // import Task16 from './Tasks/Task16';
-import Task18 from './Tasks/Task18';
+// import Task18 from './Tasks/Task18';
+import Task19 from './Tasks/Task19';
 
 export default function App() {
   return (
     // <Task16></Task16>
-    <Task18></Task18>
+    // <Task18></Task18>
+    <Task19></Task19>
   );
 }
