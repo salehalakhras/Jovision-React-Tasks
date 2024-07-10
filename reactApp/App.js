@@ -1,10 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
 
 import React from 'react';
 // import type {Node} from 'react';
@@ -13,7 +6,8 @@ import React from 'react';
 // import Task19 from './Tasks/Task19';
 // import Task20 from './Tasks/Task20';
 // import Task22 from './Tasks/Task22';
-import Task23 from './Tasks/Task23';
+// import Task23 from './Tasks/Task23';
+import Task24 from './Tasks/Task24';
 
 export default function App() {
   return (
@@ -22,6 +16,7 @@ export default function App() {
     // <Task19></Task19>
     // <Task20></Task20>
     // <Task22></Task22>
-    <Task23></Task23>
+    // <Task23></Task23>
+    <Task24></Task24>
   );
 }

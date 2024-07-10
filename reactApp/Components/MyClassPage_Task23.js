@@ -1,5 +1,7 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import { View, Text } from 'react-native';
+
+
 class MyClassPage_Task23 extends React.Component {
   render() {
     return (
