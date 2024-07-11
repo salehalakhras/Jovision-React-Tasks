@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, View, Pressable,Image, Alert } from 'react-native';
-import {imgList} from './ImageList_Task28';
 
 
 const PressableImageFComponent_Task28 = (props) => {
@@ -11,7 +10,7 @@ const PressableImageFComponent_Task28 = (props) => {
     return (
         <View style={styles.container}>
             <Pressable style={styles.imgPressable} onPress={imgPress}>
-                <Image style={styles.img} source={imgList[props.index].img}></Image>
+                <Image style={styles.img} source={props.source}></Image>
             </Pressable>
         </View>
     );
@@ -20,16 +19,17 @@ const PressableImageFComponent_Task28 = (props) => {
 const styles = StyleSheet.create({
     container:{
         flex: 1,
+        justifyContent: 'center',
         alignItems: 'center',   
     },
     imgPressable:{
-        borderWidth: 1,
-        borderColor: 'blue',
+        padding: 5,
     },
     img:{
-        height: 200,
-        resizeMode: 'contain',
-    }
+        height: 150,
+        aspectRatio: 2,
+        resizeMode: 'cover',
+    },
 })
 
 export default PressableImageFComponent_Task28;
