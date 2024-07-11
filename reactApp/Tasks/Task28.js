@@ -31,6 +31,9 @@ const Task28 = () => {
     function removeBtn(index){
         setImgArr(imgArr.filter((item,i) => i !== index))
     }
+    function duplicateBtn(index){
+        setImgArr(imgArr.concat({index: imgArr.length, img: imgArr[index].img}));
+    }
 
 
     return (
@@ -43,6 +46,7 @@ const Task28 = () => {
                 renderItem={({ index, img }) => {
                     return (
                         <View style={styles.listItem}>
+                            <Button  color={'green'} title={'Duplicate'} onPress={()=>duplicateBtn(index)}></Button>
                             <PressableImageFComponent_Task28 source={imgArr[index].img} index={index} />
                             <Button color={'red'} title={'Remove'} onPress={()=>removeBtn(index)}></Button>
                         </View>)
@@ -64,7 +68,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         paddingHorizontal: 5,
-    }
+    },
 })
 
 export default Task28;

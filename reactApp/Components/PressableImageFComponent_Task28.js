@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         padding: 5,
     },
     img:{
-        height: 150,
+        height: 110,
         aspectRatio: 2,
         resizeMode: 'cover',
     },
