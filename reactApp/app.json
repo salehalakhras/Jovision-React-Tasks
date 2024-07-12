@@ -1,4 +1,7 @@
 {
   "name": "reactApp",
-  "displayName": "reactApp"
+  "displayName": "reactApp",
+  "plugins": [
+    "expo-asset"
+  ]
 }

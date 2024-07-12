@@ -11,7 +11,8 @@ import React from 'react';
 // import Task25 from './Tasks/Task25';
 // import Task26 from './Tasks/Task26';
 // import Task27 from './Tasks/Task27';
-import Task28 from './Tasks/Task28';
+// import Task28 from './Tasks/Task28';
+import Task32 from './Tasks/Task32';
 
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
     // <Task25></Task25>
     // <Task26></Task26>
     // <Task27></Task27>
-    <Task28></Task28>
+    // <Task28></Task28>
+    <Task32></Task32>
   );
 }
