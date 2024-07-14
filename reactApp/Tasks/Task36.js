@@ -17,7 +17,9 @@ const Task36 = () => {
     
     return (
         <View>
-            <ScrollView >
+            <ScrollView refreshControl={
+          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+        }>
                 {textArr}
             </ScrollView>
         </View>
