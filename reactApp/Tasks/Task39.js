@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, View, Button } from 'react-native';
-import TextFComponentTask39 from '../Components/TextFComponent_Task39';
+// import TextFComponentTask39 from '../Components/TextFComponent_Task39';
 import { useSelector, useDispatch } from 'react-redux';
+import TextCComponentTask40 from '../Components/TextCComponent_Task40';
 
 
 const Task39 = () => {
@@ -9,7 +10,7 @@ const Task39 = () => {
     const dispatch = useDispatch();
     return (
             <View style={styles.container}>
-                {showComponent? (<TextFComponentTask39></TextFComponentTask39>):null}
+                {showComponent? (<TextCComponentTask40></TextCComponentTask40>):null}
                 <Button onPress={() => dispatch({type: 'TOGGLE_SHOW', showComponent: !showComponent})} title={showComponent? 'Hide':'Show'}></Button>
             </View>
     );
